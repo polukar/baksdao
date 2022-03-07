@@ -261,6 +261,7 @@
     transition: .4s;
     margin-left: 13px;
     margin-right: 13px;
+    background-color: #545E89;
     &:first-child {
         margin-left: 0px;
     }
@@ -423,6 +424,16 @@
 }
 
 @media(max-width: 768px) {
+    .blogger {
+        padding-top: 0px;
+    }
+    .blogger__link {
+        width: 34px;
+        height: 34px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 18px;
+    }
     .categories-btn {
         display: block;
     }
@@ -470,6 +481,9 @@
         width: 14px;
         height: 18px;
         right: 13px;
+    }
+    .blog-panel {
+        margin-bottom: 30px;
     }
     .blog-panel__info {
         padding: 22px 28px;
@@ -591,5 +605,18 @@
         font-size: 10px;
         height: 75px;
         border-radius: 10px;
+    }
+}
+
+@media(max-width: 380px) {
+    .blogger {
+        justify-content: space-between;
+    }
+    .blogger__link {
+        margin-left: 0px;
+        margin-right: 0px;
+        img {
+            width: 14px;
+        }
     }
 }
